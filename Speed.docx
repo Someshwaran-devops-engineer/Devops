@@ -1,0 +1,25 @@
+Direct connect = 10Gbps
+Snowball Edge = 100Gbps
+File Gateway = 1Gbps
+
+fanout (sns + sqs) - decouple upto 100000 sns + sqs , Scalability, modern
+
+ durable, stateless - sns,s3,lambda
+ sns: o increase the Lambda quotas significantly to handle the high volumes of data that the
+company needs to load into the database
+
+ S3 --> unpredictable pattern - intelligent tiering
+
+Redshift:
+    parallel query execution, and columnar storage on high-performance disk.
+    speed, efficiency, and accuracy
+Athena:
+    With Athena, there’s no need for complex ETL jobs to prepare your data for analysis
+
+ Migrating database schemas: engines
+    homogeneous migrations - Oracle to Oracle
+    heterogeneous migrations - Oracle to rds - 
+        Oracle to aurora requiers -->  AWS Schema Conversion Tool (AWS SCT) 
+
+Documentdb: 
+key value,table,item
